@@ -1,0 +1,59 @@
+#view images
+docker images
+
+#docker run command
+docker run -d -p 7111:3111 techtrends
+
+#view running containers
+docker ps
+
+#view container logs
+docker logs 55be7ecf3da7
+
+#logs from running container
+
+* Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:app:04/11/2023, 10:08:29, "About Us" page retrieved
+INFO:app:04/11/2023, 10:08:29, "About Us" page retrieved
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:29] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:29] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:29] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:29] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:04/11/2023, 10:08:59, Article "2020 CNCF Annual Report" retrieved!
+INFO:app:04/11/2023, 10:08:59, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:59] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:59] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:59] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:08:59] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:04/11/2023, 10:09:03, A non-existing article accessed and a 404 page response returned
+INFO:app:04/11/2023, 10:09:03, A non-existing article accessed and a 404 page response returned
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:03] "GET /100 HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:03] "GET /100 HTTP/1.1" 404 -
+INFO:app:04/11/2023, 10:09:04, A non-existing article accessed and a 404 page response returned
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:04] "GET /100 HTTP/1.1" 404 -
+INFO:app:04/11/2023, 10:09:04, A non-existing article accessed and a 404 page response returned
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:04] "GET /100 HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:04] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:04] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:09] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:09] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:09] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:09] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:04/11/2023, 10:09:22, Article "Docker logs " Created!
+INFO:app:04/11/2023, 10:09:22, Article "Docker logs " Created!
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:22] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:22] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:22] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [11/Apr/2023 10:09:22] "GET /static/css/main.css HTTP/1.1" 304 -
