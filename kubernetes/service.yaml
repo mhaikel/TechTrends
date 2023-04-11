@@ -1,0 +1,20 @@
+## API version.
+apiVersion: v1
+## Resource type.
+kind: Service
+## resource metadata like labels, name, namespace
+metadata:
+  labels:
+    app: techtrends
+  name: techtrends
+  namespace: sandbox
+## Define the desired configuration for the Service resource.
+spec:
+  ports:
+  - port: 4111
+    protocol: TCP
+    targetPort: 3111
+  selector:
+    app: techtrends
+  ## Define the Service type, here set to ClusterIP.
+  type: ClusterIP
