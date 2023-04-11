@@ -14,5 +14,5 @@ spec:
         - values-prod.yaml
     path: helm
     repoURL: https://github.com/mhaikel/TechTrends
-    targetRevision: HEAD 
+    targetRevision: HEAD
   syncPolicy: {}

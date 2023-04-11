@@ -1,3 +1,6 @@
+#build image
+docker build -t techtrends .
+
 #view images
 docker images
 
