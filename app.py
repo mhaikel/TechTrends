@@ -120,11 +120,19 @@ def create():
 
 @app.route('/healthz')
 def healthz():
+    connection = get_db_connection()
     response = app.response_class(
             response=json.dumps({"result":"OK - healthy"}),
             status=200,
             mimetype='application/json'
     )
+    if connection is None:
+        response = app.response_class(
+            response=json.dumps({"result":"ERROR - unhealthy"}),
+            status=500,
+            mimetype='application/json'
+        )
+    
     return response
 
 @app.route('/metrics')
